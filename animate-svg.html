@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Animation</title>
+    <!-- <link rel="stylesheet" href="asset/css/style.css"> -->
+</head>
+<body>
+    <h1>animate</h1>
+    <svg width="800" height="600">
+        <rect id="rectangle" 
+              x="400" y="200" width="100" height="100" 
+              fill="rgb(0,102,118)">
+
+              <animate attributeName="x" 
+                       begin="0s" dur="3s"
+                       from="400" to="0"/>
+
+              <animate attributeName="y" 
+                       begin="0s" dur="3s"
+                       from="200" to="0"/>
+
+        </rect>
+    </svg>
+
+    <h1>AnimateMotion</h1>
+    <svg width="800" height="600">
+        <rect id="rectangle" 
+              x="400" y="200" width="100" height="100" 
+              fill="rgb(0,102,118)">
+
+        <animateMotion path="M 0 0 L -400 -200"
+                       begin="0s" dur="3s" 
+                       fill="freeze" />
+
+        <animateMotion path="M-400 -200 A400 200 0 0 1 0 0"
+                       begin="3s" dur="6s" 
+                       fill="freeze" />
+
+        </rect>
+    </svg>
+
+    <h1>AnimateTransform</h1>
+    <svg width="800" height="600">
+        <image id="tsImg" href="https://github.com/avturin1980/Interactive-Web-Animation/blob/main/3%20SVG%20Animations/C3L1/Example2/testImage.jpg?raw=true" 
+         x="0" y="0" width="650" height="374">
+    
+          <animateTransform attributeName="transform" 
+           type="scale" begin="2" dur="3" values="1; 0.4; 1.2; 1"/>
+    
+          <animateTransform attributeName="transform" 
+           type="skewY" begin="6" dur="3" values="0; 20; 0"/>
+    
+          <animateTransform attributeName="transform" 
+           type="rotate" begin="10" dur="3"
+           values="0 325 187; 180 325 187" fill="freeze"/>
+        </image> 
+    </svg>
+</body>
+</html> 

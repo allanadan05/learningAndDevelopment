@@ -1,0 +1,21 @@
+.main{
+    color: black;
+}
+
+header{
+    background: green;
+}
+
+path {
+    stroke: red;
+    stroke-width: 10;
+}
+
+p{
+    font-weight: bolder;
+    color: red;
+}
+
+svg{
+    border: blue 1px solid;
+}
