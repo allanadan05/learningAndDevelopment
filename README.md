@@ -2,7 +2,10 @@
 - [Learning and Development](#learning-and-development)
   - [Prerequisites](#prerequisites)
   - [What is SVG?](#what-is-svg)
+  - [Groups in SVG](#groups-in-svg)
+  - [The DEFS tag \& clipping paths](#the-defs-tag--clipping-paths)
     - [Container Element](#container-element)
+  - [Viewport VS Viewbox](#viewport-vs-viewbox)
     - [viewport](#viewport)
     - [viewBox](#viewbox)
     - [Relationship between coordinate system and viewBox](#relationship-between-coordinate-system-and-viewbox)
@@ -24,10 +27,19 @@ By: Allan Adan
 2. CSS
 3. JavaScript
 ## What is SVG? 
- - scalable vector graphics
- - A language for describing 2D graphics
+- scalable vector graphics
+- A language for describing 2D graphics
 - Fir simpler definition, it is an XML for web graphics
 - One of the benefits of using the SVG file is that they are resolution independent, which means they can scale infinitely.
+
+## Groups in SVG
+- use to group several elements into one unified object, enclose svg elements in \<g></g> tag
+
+## The DEFS tag & clipping paths
+- \<clipPath></clipPath> tag. Clip path is going to wrap any number of shapes that we intend to use as a mask. It is an analogous to masks in Photoshop. Mask is simply a shape applie to an underlying shape or shapes to either hide or reveal elements.
+- \<defs></defs> tag is short for definitions. It allow you to add any number of elements that it's going to be rendered directly in your SVG image.
+- 
+
 ### Container Element
 
 - When we add an svg element, the user-agent of the browser creates a viewport coordinate system and that will allow us to create graphical content.
@@ -38,8 +50,10 @@ By: Allan Adan
           <!-- Graphical contents here -->
       </svg>
 
+## Viewport VS Viewbox
 ### viewport
 
+- is a window to your SVG canvas.
 - Default size is 300px x 150px.
 
       <svg width="300" height="150">
@@ -48,6 +62,7 @@ By: Allan Adan
 
 ### viewBox
 
+- specifies what region of the canvas area we want to make visible through a vewport window
 - is an SVG attr to set image box
 - Syntax: ``viewBox="z y width height"``
   
