@@ -41,11 +41,61 @@ Youtube Channel: [Rayan Slim](https://www.youtube.com/@RayanSlim087?sub_confirma
     - Extension Pack for Java by Microsoft
 3. Write and run your first code
 
-## Best Practices
-1. CamelCase Filenames for Java files
-2. You must write all of your codes in a class.
+## Terminal Commands
+1. `javac`
+   - compiles your code. Everytime you update the code, compile it.
+   - Example: javac HelloJava.java
+2. `java`
+   - runs the compiled code.
+   - Example: java HelloJava
 
+## Common Terminal Errors
+1. Running commands from an old terminal.
+   - After installing java, open a new terminal
+2. Misspelling the command
+3. Not launching the exact folder that contains your file.
+
+## Inlay Hints
+
+Inlay Hints are markers that provide more information about your code.
+
+An example of an inlay hint is this little x, but how does this x provide more information about the `println` function?
+```java
+   System.out.println("Hello Java");
+```
+
+In this case, it really doesn't provide any useful information.
+
+An easy way to think about it is hey, X marks the spot where you should write the message that you want to print, but it's not really that useful.
+
+Inlay hints will become useful once you reach the section on functions.
+
+## 1. Getting Started
+- `class`: contains all of your code.
+- `main()`: entry point of your app.
+- `javac <file-name>.java`: compiles your code.
+- `java <file-name>`: runs the compiled code.
+
+## 2. Variables
+
+
+## Coding Pitfalls
+None yet.
+
+## Best Practices
+1. The name of a class must be CamelCase.
+2. You must write all of your codes in a class.
+3. Use Terminal commands to compile and execute your java code. 
+   - `javac` : compiles code
+   - `java` : executes code
+  
+## Tips and Tricks
+- Use the up key to run previous terminal commands.
+- Use the tab key to autocomplete.
 ## Notes
 1. Code is case-sensitive
-2. The class name must always match the file name
-3. 
+2. The `class` name must always match the file name
+3. The `class` must contain all of your code.
+4. `main()` is the entry point.
+5. `javac` command compiles your code.
+6. `java` runs the compiled code
